@@ -1,10 +1,6 @@
-const huiswerkMaken = (vak, callback) => {
-    setTimeout( () => console.log(`Ok, ok ik ga nu mijn ${vak} huiswerk maken`), 2500);
-    callback();
-}
+const cijfersOptellen = (...args) => args.reduce((acc, arg) => acc + arg);
+console.log(cijfersOptellen(0, 1, 3, 5, 7, 8));
 
-const klaarMetHuiswerk = () => {
-    console.log(`Kijk Paps/Mams, ik ben klaar met mijn huiswerk!`)
-}
+args = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+console.log(cijfersOptellen(...args));
 
-huiswerkMaken('wiskunde', klaarMetHuiswerk)
